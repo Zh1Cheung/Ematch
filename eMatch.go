@@ -111,3 +111,50 @@ func boundaryProcessForCode(str, pattern string) bool {
 	}
 	return patterns == 0 && stria == 0
 }
+
+var maxCodeBytes = func() []byte {
+	b := make([]byte, 4)
+	if utf8.EncodeRune(b, '\U0010FFFF') != 4 {
+		panic("invalid rune encoding")
+	}
+	return b
+}()
+
+func boundaryProcessForValue(pattern string) (min, max string) {
+	if pattern == "" || pattern[0] == '*' {
+		return "", ""
+	}
+
+	minb := make([]byte, 0, len(pattern))
+	maxb := make([]byte, 0, len(pattern))
+	var wild bool
+	for i := 0; i < len(pattern); i++ {
+		if pattern[i] == '*' {
+			wild = true
+			break
+		}
+		if pattern[i] == '?' {
+			minb = append(minb, 0)
+			maxb = append(maxb, maxCodeBytes...)
+		} else {
+			minb = append(minb, pattern[i])
+			maxb = append(maxb, pattern[i])
+		}
+	}
+	if wild {
+		r, n := utf8.DecodeLastRune(maxb)
+		if r != utf8.RuneError {
+			if r < utf8.MaxRune {
+				r++
+				if r > 0x7f {
+					b := make([]byte, 4)
+					nn := utf8.EncodeRune(b, r)
+					maxb = append(maxb[:len(maxb)-n], b[:nn]...)
+				} else {
+					maxb = append(maxb[:len(maxb)-n], byte(r))
+				}
+			}
+		}
+	}
+	return string(minb), string(maxb)
+}
