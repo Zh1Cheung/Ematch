@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eMatch.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/match_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,11 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -68,16 +72,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="300" y="275" key="Vcs.Push.Dialog.v2" timestamp="1601645745619">
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state x="300" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1026@0.23.1792.1026" timestamp="1601645745619" />
-    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601646606385">
+    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601690157856">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601646606385" />
+    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601690157856" />
     <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1601645857822" />
   </component>
 </project>
