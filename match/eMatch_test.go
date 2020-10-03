@@ -1,4 +1,4 @@
-package Ematch
+package match
 
 import (
 	"fmt"
@@ -7,79 +7,6 @@ import (
 	"time"
 	"unicode/utf8"
 )
-
-func TestRandomInput(t *testing.T) {
-	rand.Seed(time.Now().UnixNano())
-	b1 := make([]byte, 100)
-	b2 := make([]byte, 100)
-	for i := 0; i < 1000000; i++ {
-		if _, err := rand.Read(b1); err != nil {
-			t.Fatal(err)
-		}
-		if _, err := rand.Read(b2); err != nil {
-			t.Fatal(err)
-		}
-		isMatch(string(b1), string(b2))
-	}
-}
-func testBoundaryProcessForValue(pattern, exmin, exmax string) error {
-	min, max := boundaryProcessForValue(pattern)
-	if min != exmin || max != exmax {
-		return fmt.Errorf("expected '%v'/'%v', got '%v'/'%v'",
-			exmin, exmax, min, max)
-	}
-	return nil
-}
-func TestBoundaryProcessForValue(t *testing.T) {
-	if err := testBoundaryProcessForValue("hell*", "hell", "helm"); err != nil {
-		t.Fatal(err)
-	}
-	if err := testBoundaryProcessForValue("hell?", "hell"+string(0), "hell"+string(utf8.MaxRune)); err != nil {
-		t.Fatal(err)
-	}
-	if err := testBoundaryProcessForValue("h确实ell*", "h确实ell", "h确实elm"); err != nil {
-		t.Fatal(err)
-	}
-	if err := testBoundaryProcessForValue("h确*ell*", "h确", "h雀"); err != nil {
-		t.Fatal(err)
-	}
-}
-
-func TestIsPattern(t *testing.T) {
-	patterns := []string{
-		"*", "hello*", "hello*world", "*world",
-		"?", "hello?", "hello?world", "?world",
-	}
-	nonPatterns := []string{
-		"", "hello",
-	}
-	for _, pattern := range patterns {
-		if !IsPattern(pattern) {
-			t.Fatalf("expected true")
-		}
-	}
-
-	for _, s := range nonPatterns {
-		if IsPattern(s) {
-			t.Fatalf("expected false")
-		}
-	}
-}
-func BenchmarkAscii(t *testing.B) {
-	for i := 0; i < t.N; i++ {
-		if !isMatch("hello", "hello") {
-			t.Fatal("fail")
-		}
-	}
-}
-
-func BenchmarkUnicode(t *testing.B) {
-	for i := 0; i < t.N; i++ {
-		if !isMatch("h情llo", "h情llo") {
-			t.Fatal("fail")
-		}
-	}
-}
 
 func TestMatch(t *testing.T) {
 	if !isMatch("hello world", "hello world") {
@@ -402,6 +329,79 @@ func TestWildcardMatch(t *testing.T) {
 		actualResult := isMatch(testCase.text, testCase.pattern)
 		if testCase.matched != actualResult {
 			t.Errorf("Test %d: Expected the result to be `%v`, but instead found it to be `%v`", i+1, testCase.matched, actualResult)
+		}
+	}
+}
+
+func TestRandomInput(t *testing.T) {
+	rand.Seed(time.Now().UnixNano())
+	b1 := make([]byte, 100)
+	b2 := make([]byte, 100)
+	for i := 0; i < 1000000; i++ {
+		if _, err := rand.Read(b1); err != nil {
+			t.Fatal(err)
+		}
+		if _, err := rand.Read(b2); err != nil {
+			t.Fatal(err)
+		}
+		isMatch(string(b1), string(b2))
+	}
+}
+func testBoundaryProcessForValue(pattern, exmin, exmax string) error {
+	min, max := boundaryProcessForValue(pattern)
+	if min != exmin || max != exmax {
+		return fmt.Errorf("expected '%v'/'%v', got '%v'/'%v'",
+			exmin, exmax, min, max)
+	}
+	return nil
+}
+func TestBoundaryProcessForValue(t *testing.T) {
+	if err := testBoundaryProcessForValue("hell*", "hell", "helm"); err != nil {
+		t.Fatal(err)
+	}
+	if err := testBoundaryProcessForValue("hell?", "hell"+string(0), "hell"+string(utf8.MaxRune)); err != nil {
+		t.Fatal(err)
+	}
+	if err := testBoundaryProcessForValue("h确实ell*", "h确实ell", "h确实elm"); err != nil {
+		t.Fatal(err)
+	}
+	if err := testBoundaryProcessForValue("h确*ell*", "h确", "h雀"); err != nil {
+		t.Fatal(err)
+	}
+}
+
+func TestIsPattern(t *testing.T) {
+	patterns := []string{
+		"*", "hello*", "hello*world", "*world",
+		"?", "hello?", "hello?world", "?world",
+	}
+	nonPatterns := []string{
+		"", "hello",
+	}
+	for _, pattern := range patterns {
+		if !IsPattern(pattern) {
+			t.Fatalf("expected true")
+		}
+	}
+
+	for _, s := range nonPatterns {
+		if IsPattern(s) {
+			t.Fatalf("expected false")
+		}
+	}
+}
+func BenchmarkAscii(t *testing.B) {
+	for i := 0; i < t.N; i++ {
+		if !isMatch("hello", "hello") {
+			t.Fatal("fail")
+		}
+	}
+}
+
+func BenchmarkUnicode(t *testing.B) {
+	for i := 0; i < t.N; i++ {
+		if !isMatch("h情llo", "h情llo") {
+			t.Fatal("fail")
 		}
 	}
 }
