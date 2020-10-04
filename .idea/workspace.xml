@@ -26,13 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/format/eColorize.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/format/eColorize_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/format/eFormat.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/format/eFormat_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eMatch.go" beforeDir="false" afterPath="$PROJECT_DIR$/match/eMatch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/match_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/match/eMatch_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/format/eColorize.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/format/eColorize_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/format/eFormat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/format/eFormat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/match/eMatch.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/match/eMatch_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +64,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/format" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/json" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/format" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/match" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/json" />
+      <recent name="$PROJECT_DIR$/format" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Test.eFormat_test.go">
+  <component name="RunManager" selected="Go Test.eMatch_test.go (1)">
     <configuration name="TestMatch in eMatch_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
       <module name="Ematch" />
       <working_directory value="$PROJECT_DIR$/match" />
@@ -136,9 +137,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.eMatch_test.go (1)" />
         <item itemvalue="Go Test.eFormat_test.go" />
         <item itemvalue="Go Test.TestMatch in eMatch_test.go" />
-        <item itemvalue="Go Test.eMatch_test.go (1)" />
         <item itemvalue="Go Test.eMatch_test.go" />
         <item itemvalue="Go Test.TestMatch in eMatch_test.go (2)" />
       </list>
@@ -173,30 +174,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1033" height="279" key="GridCell.Tab.0.bottom" timestamp="1601694724548">
+    <state width="1033" height="345" key="GridCell.Tab.0.bottom" timestamp="1601725620380">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601694724548" />
-    <state width="1033" height="279" key="GridCell.Tab.0.center" timestamp="1601694724547">
+    <state width="1033" height="345" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620380" />
+    <state width="1033" height="345" key="GridCell.Tab.0.center" timestamp="1601725620379">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="279" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601694724547" />
-    <state width="1033" height="279" key="GridCell.Tab.0.left" timestamp="1601694724547">
+    <state width="1033" height="345" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
+    <state width="1033" height="345" key="GridCell.Tab.0.left" timestamp="1601725620379">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="279" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601694724547" />
-    <state width="1033" height="279" key="GridCell.Tab.0.right" timestamp="1601694724548">
+    <state width="1033" height="345" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
+    <state width="1033" height="345" key="GridCell.Tab.0.right" timestamp="1601725620379">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="279" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601694724548" />
+    <state width="1033" height="345" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
     <state x="300" y="275" key="Vcs.Push.Dialog.v2" timestamp="1601645745619">
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state x="300" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1026@0.23.1792.1026" timestamp="1601645745619" />
-    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601693519739">
+    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601724080856">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601693519739" />
+    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601724080856" />
     <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1601645857822" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
