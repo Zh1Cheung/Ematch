@@ -25,15 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/format/eColorize.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/format/eColorize_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/format/eFormat.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/format/eFormat_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/match/eMatch.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/match/eMatch_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
