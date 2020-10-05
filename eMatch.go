@@ -1,4 +1,4 @@
-package Ematch
+package eMatch
 
 import "unicode/utf8"
 
