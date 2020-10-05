@@ -25,10 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eMatch_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,15 +43,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
-  </component>
   <component name="ProjectId" id="1iK9zooYf7NdVJl2XW7Deaixa2M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -175,6 +173,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -183,22 +184,22 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="696" y="376" key="#Go_Modules/0.23.1792.1025@0.23.1792.1025" timestamp="1601859958383" />
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1601859909053">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1601860045129">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909053" />
-    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1601859909052">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601860045129" />
+    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1601860045128">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909052" />
-    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1601859909051">
+    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601860045128" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1601860045128">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909051" />
-    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1601859909052">
+    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601860045128" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1601860045128">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909052" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601860045128" />
     <state x="300" y="275" key="Vcs.Push.Dialog.v2" timestamp="1601645745619">
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
