@@ -8,7 +8,7 @@ import (
 	"unicode/utf8"
 )
 
-func TestMatch(t *testing.T) {
+func TestIsMatch(t *testing.T) {
 	if !isMatch("hello world", "hello world") {
 		t.Fatal("fail")
 	}

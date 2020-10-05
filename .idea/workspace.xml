@@ -25,7 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="" />
+    <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eMatch_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +46,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1iK9zooYf7NdVJl2XW7Deaixa2M" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,7 +62,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,7 +76,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.eMatch_test.go (1)">
+  <component name="RunManager" selected="Go Test.TestIsMatch in github.com/Zh1Cheung/eMatch">
+    <configuration name="TestIsMatch in eMatch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Ematch" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/eMatch_test.go" />
+      <pattern value="^\QTestIsMatch\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIsMatch in github.com/Zh1Cheung/eMatch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Ematch" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Zh1Cheung/eMatch" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestIsMatch\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestMatch in eMatch_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
       <module name="Ematch" />
       <working_directory value="$PROJECT_DIR$/match" />
@@ -80,17 +108,7 @@
       <pattern value="^\QTestMatch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMatch in eMatch_test.go (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Ematch" />
-      <working_directory value="$PROJECT_DIR$/match" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/match/eMatch_test.go" />
-      <pattern value="^\QTestMatch\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMatch in eMatch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMatch in eMatch_test.go (3)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Ematch" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -100,13 +118,14 @@
       <pattern value="^\QTestMatch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="eFormat_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestWildcardMatch in eMatch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Ematch" />
-      <working_directory value="$PROJECT_DIR$/format" />
+      <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/format/eFormat_test.go" />
+      <filePath value="$PROJECT_DIR$/eMatch_test.go" />
+      <pattern value="^\QTestWildcardMatch\E$" />
       <method v="2" />
     </configuration>
     <configuration name="eMatch_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -118,22 +137,13 @@
       <filePath value="$PROJECT_DIR$/eMatch_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="eMatch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Ematch" />
-      <working_directory value="$PROJECT_DIR$/match" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/match/eMatch_test.go" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestIsMatch in github.com/Zh1Cheung/eMatch" />
+        <item itemvalue="Go Test.TestIsMatch in eMatch_test.go" />
+        <item itemvalue="Go Test.TestWildcardMatch in eMatch_test.go" />
+        <item itemvalue="Go Test.TestMatch in eMatch_test.go (3)" />
         <item itemvalue="Go Test.eMatch_test.go (1)" />
-        <item itemvalue="Go Test.eFormat_test.go" />
-        <item itemvalue="Go Test.TestMatch in eMatch_test.go" />
-        <item itemvalue="Go Test.eMatch_test.go" />
-        <item itemvalue="Go Test.TestMatch in eMatch_test.go (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -165,31 +175,38 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1033" height="345" key="GridCell.Tab.0.bottom" timestamp="1601725620380">
+    <state x="696" y="376" key="#Go_Modules" timestamp="1601859958383">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="345" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620380" />
-    <state width="1033" height="345" key="GridCell.Tab.0.center" timestamp="1601725620379">
+    <state x="696" y="376" key="#Go_Modules/0.23.1792.1025@0.23.1792.1025" timestamp="1601859958383" />
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1601859909053">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="345" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
-    <state width="1033" height="345" key="GridCell.Tab.0.left" timestamp="1601725620379">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909053" />
+    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1601859909052">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="345" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
-    <state width="1033" height="345" key="GridCell.Tab.0.right" timestamp="1601725620379">
+    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909052" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1601859909051">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1033" height="345" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601725620379" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909051" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1601859909052">
+      <screen x="0" y="23" width="1792" height="1025" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1601859909052" />
     <state x="300" y="275" key="Vcs.Push.Dialog.v2" timestamp="1601645745619">
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state x="300" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1026@0.23.1792.1026" timestamp="1601645745619" />
-    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601724080856">
+    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601859871035">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601724080856" />
+    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601859871035" />
     <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1601645857822" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
