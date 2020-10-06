@@ -26,6 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6b874e-5d66-491f-8adb-ce316102d98d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eMatch.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eMatch_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/eMatch_test.go" afterDir="false" />
     </list>
@@ -187,6 +188,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="696" y="376" key="#Go_Modules/0.23.1792.1025@0.23.1792.1025" timestamp="1601859958383" />
+    <state x="711" y="366" key="#Notifications" timestamp="1601866007103">
+      <screen x="0" y="23" width="1792" height="1025" />
+    </state>
+    <state x="711" y="366" key="#Notifications/0.23.1792.1025@0.23.1792.1025" timestamp="1601866007103" />
     <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1601860045129">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -207,10 +212,10 @@
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state x="300" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1026@0.23.1792.1026" timestamp="1601645745619" />
-    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601859871035">
+    <state x="995" y="236" width="598" height="548" key="find.popup" timestamp="1601897586326">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601859871035" />
+    <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601897586326" />
     <state x="995" y="236" width="598" height="548" key="find.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1601645857822" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

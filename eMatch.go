@@ -2,11 +2,11 @@ package eMatch
 
 import "unicode/utf8"
 
-func isMatch(str, pattern string) bool {
+func IsMatch(str, pattern string) bool {
 	if pattern == "*" {
 		return true
 	}
-	return wildcardMatch(str, pattern)
+	return WildcardMatch(str, pattern)
 }
 
 func IsPattern(str string) bool {
@@ -18,10 +18,10 @@ func IsPattern(str string) bool {
 	return false
 }
 
-func wildcardMatch(str, pattern string) bool {
+func WildcardMatch(str, pattern string) bool {
 	for len(pattern) > 0 {
 		if pattern[0] > 0x7f {
-			return boundaryProcessForCode(str, pattern)
+			return BoundaryProcessForCode(str, pattern)
 		}
 		switch pattern[0] {
 		default:
@@ -29,7 +29,7 @@ func wildcardMatch(str, pattern string) bool {
 				return false
 			}
 			if str[0] > 0x7f {
-				return boundaryProcessForCode(str, pattern)
+				return BoundaryProcessForCode(str, pattern)
 			}
 			if str[0] != pattern[0] {
 				return false
@@ -39,7 +39,7 @@ func wildcardMatch(str, pattern string) bool {
 				return false
 			}
 		case '*':
-			return wildcardMatch(str, pattern[1:]) || (len(str) > 0 && wildcardMatch(str[1:], pattern))
+			return WildcardMatch(str, pattern[1:]) || (len(str) > 0 && WildcardMatch(str[1:], pattern))
 		}
 		str = str[1:]
 		pattern = pattern[1:]
@@ -47,7 +47,7 @@ func wildcardMatch(str, pattern string) bool {
 	return len(str) == 0 && len(pattern) == 0
 }
 
-func boundaryProcessForCode(str, pattern string) bool {
+func BoundaryProcessForCode(str, pattern string) bool {
 	var st, pa rune
 	var stria, patterns int
 
@@ -84,8 +84,8 @@ func boundaryProcessForCode(str, pattern string) bool {
 				return false
 			}
 		case '*':
-			return boundaryProcessForCode(str, pattern[patterns:]) ||
-				(stria > 0 && boundaryProcessForCode(str[stria:], pattern))
+			return BoundaryProcessForCode(str, pattern[patterns:]) ||
+				(stria > 0 && BoundaryProcessForCode(str[stria:], pattern))
 		}
 		str = str[stria:]
 		pattern = pattern[patterns:]
@@ -120,7 +120,7 @@ var maxCodeBytes = func() []byte {
 	return b
 }()
 
-func boundaryProcessForValue(pattern string) (min, max string) {
+func BoundaryProcessForValue(pattern string) (min, max string) {
 	if pattern == "" || pattern[0] == '*' {
 		return "", ""
 	}

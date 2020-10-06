@@ -9,43 +9,43 @@ import (
 )
 
 func TestIsMatch(t *testing.T) {
-	if !isMatch("hello world", "hello world") {
+	if !IsMatch("hello world", "hello world") {
 		t.Fatal("fail")
 	}
-	if isMatch("hello world", "jello world") {
+	if IsMatch("hello world", "jello world") {
 		t.Fatal("fail")
 	}
-	if !isMatch("hello world", "hello*") {
+	if !IsMatch("hello world", "hello*") {
 		t.Fatal("fail")
 	}
-	if isMatch("hello world", "jello*") {
+	if IsMatch("hello world", "jello*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("hello world", "hello?world") {
+	if !IsMatch("hello world", "hello?world") {
 		t.Fatal("fail")
 	}
-	if isMatch("hello world", "jello?world") {
+	if IsMatch("hello world", "jello?world") {
 		t.Fatal("fail")
 	}
-	if !isMatch("hello world", "he*o?world") {
+	if !IsMatch("hello world", "he*o?world") {
 		t.Fatal("fail")
 	}
-	if !isMatch("hello world", "he*o?wor*") {
+	if !IsMatch("hello world", "he*o?wor*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("hello world", "he*o?*r*") {
+	if !IsMatch("hello world", "he*o?*r*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("撒大手大脚离开", "*") {
+	if !IsMatch("撒大手大脚离开", "*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("撒大手大脚离开", "*手大*") {
+	if !IsMatch("撒大手大脚离开", "*手大*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("撒大手大脚离开", "*手?*") {
+	if !IsMatch("撒大手大脚离开", "*手?*") {
 		t.Fatal("fail")
 	}
-	if !isMatch("撒大手大脚离开", "撒大手?大脚离开") {
+	if !IsMatch("撒大手大脚离开", "撒大手?大脚离开") {
 		t.Fatal("fail")
 	}
 }
@@ -326,7 +326,7 @@ func TestWildcardMatch(t *testing.T) {
 		},
 	}
 	for i, testCase := range testCases {
-		actualResult := isMatch(testCase.text, testCase.pattern)
+		actualResult := IsMatch(testCase.text, testCase.pattern)
 		if testCase.matched != actualResult {
 			t.Errorf("Test %d: Expected the result to be `%v`, but instead found it to be `%v`", i+1, testCase.matched, actualResult)
 		}
@@ -344,11 +344,11 @@ func TestRandomInput(t *testing.T) {
 		if _, err := rand.Read(b2); err != nil {
 			t.Fatal(err)
 		}
-		isMatch(string(b1), string(b2))
+		IsMatch(string(b1), string(b2))
 	}
 }
 func testBoundaryProcessForValue(pattern, exmin, exmax string) error {
-	min, max := boundaryProcessForValue(pattern)
+	min, max := BoundaryProcessForValue(pattern)
 	if min != exmin || max != exmax {
 		return fmt.Errorf("expected '%v'/'%v', got '%v'/'%v'",
 			exmin, exmax, min, max)
@@ -392,7 +392,7 @@ func TestIsPattern(t *testing.T) {
 }
 func BenchmarkAscii(t *testing.B) {
 	for i := 0; i < t.N; i++ {
-		if !isMatch("hello", "hello") {
+		if !IsMatch("hello", "hello") {
 			t.Fatal("fail")
 		}
 	}
@@ -400,7 +400,7 @@ func BenchmarkAscii(t *testing.B) {
 
 func BenchmarkUnicode(t *testing.B) {
 	for i := 0; i < t.N; i++ {
-		if !isMatch("h情llo", "h情llo") {
+		if !IsMatch("h情llo", "h情llo") {
 			t.Fatal("fail")
 		}
 	}
