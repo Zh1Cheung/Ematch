@@ -347,7 +347,7 @@ func TestRandomInput(t *testing.T) {
 		IsMatch(string(b1), string(b2))
 	}
 }
-func testBoundaryProcessForValue(pattern, exmin, exmax string) error {
+func TestBoundaryProcessForValue(pattern, exmin, exmax string) error {
 	min, max := BoundaryProcessForValue(pattern)
 	if min != exmin || max != exmax {
 		return fmt.Errorf("expected '%v'/'%v', got '%v'/'%v'",
